@@ -1,0 +1,10 @@
+<h1>Lista de Postagens: </h1>
+
+<!-- each significa cada, para cada postagen faço algo, exiba o titulo e o conteudo -->
+{{#each posts}}
+    <h1>{{titulo}}</h1>
+    <p>{{conteudo}}</p>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}
+
